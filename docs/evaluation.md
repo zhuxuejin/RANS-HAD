@@ -4,7 +4,7 @@ The benchmark compares RANS and five collaborative-representation detectors on 1
 
 ## Input and commands
 
-Place the public MAT files anywhere under the directory passed to `--data`. Each selected filename must occur once. Names follow `abu-airport-1.mat` through `abu-airport-4.mat`, `abu-beach-1.mat` through `abu-beach-4.mat`, and `abu-urban-1.mat` through `abu-urban-5.mat`. The `data` variable is an H × W × B cube in the released band order. The `map` variable is an H × W array with 0 for background and 1 for anomaly.
+The dataset submodule provides all 13 MAT files under `data/ABU/`. Follow the [repository setup instructions](../README.md#installation) to fetch them. To evaluate a separate copy, pass its directory to `--data`. Each selected filename must occur once. Names follow `abu-airport-1.mat` through `abu-airport-4.mat`, `abu-beach-1.mat` through `abu-beach-4.mat`, and `abu-urban-1.mat` through `abu-urban-5.mat`. The `data` variable is an H × W × B cube in the released band order. The `map` variable is an H × W array with 0 for background and 1 for anomaly.
 
 With the package installed, these commands score all 13 scenes and produce the six-method comparison. Replace the example data and output paths with your directories.
 

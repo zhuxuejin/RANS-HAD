@@ -1,0 +1,3 @@
+[submodule "data/ABU"]
+	path = data/ABU
+	url = https://github.com/sxt1996/Airport-Beach-Urban-ABU.git

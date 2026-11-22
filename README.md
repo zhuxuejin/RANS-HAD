@@ -25,17 +25,26 @@ The central guard excludes the tested pixel and its immediate neighbors from the
 
 ## Installation
 
-Clone the repository and install the package using Python 3.10 or later.
+Clone the project with its ABU dataset, then install the package using Python 3.10 or later.
 
 ```shell
-git clone https://github.com/zhuxuejin/RANS-HAD.git
+git clone --recurse-submodules https://github.com/zhuxuejin/RANS-HAD.git
 cd RANS-HAD
 python -m pip install -e .
 ```
 
 ## Score and evaluate ABU
 
-Download the MAT files separately and place them under `data/ABU/`, keeping their original names, such as `abu-airport-1.mat`. Each file contains a `data` cube with axes **rows × columns × bands** and a binary reference `map`. Scoring uses only the cube. Evaluation uses the reference mask, with one indicating an anomaly. [ABU dataset and MAT files](https://github.com/sxt1996/Airport-Beach-Urban-ABU)
+The clone command above places all 13 ABU scenes under `data/ABU/`. The dataset is a Git submodule pinned to a specific upstream revision. Each MAT file contains a `data` cube with axes **rows × columns × bands** and a binary reference `map`, where one denotes an anomaly. Scoring reads the cube and evaluation reads the mask. [Browse the pinned dataset](https://github.com/sxt1996/Airport-Beach-Urban-ABU/tree/3d62937ee2b7fe1f9471605d19dd92b39a1aa6a1)
+
+For an existing Git clone, update the project and fetch the dataset from the repository root.
+
+```shell
+git pull --ff-only
+git submodule update --init --recursive
+```
+
+If you use GitHub's **Download ZIP**, extract the 13 MAT files from the dataset ZIP into `data/ABU/` so the first file is `data/ABU/abu-airport-1.mat`. [Download the pinned ABU ZIP](https://github.com/sxt1996/Airport-Beach-Urban-ABU/archive/3d62937ee2b7fe1f9471605d19dd92b39a1aa6a1.zip)
 
 To score **Airport-1 with RANS** and calculate its metrics, run both commands with the same scene and method selection.
 

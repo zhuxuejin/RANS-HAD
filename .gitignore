@@ -9,7 +9,8 @@ __pycache__/
 .pytest_cache/
 
 # Local scene data, generated maps, and evaluation outputs
-/data/
+/data/*
+!/data/ABU
 /runs/
 *.mat
 *.npy
