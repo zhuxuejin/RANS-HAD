@@ -1,0 +1,41 @@
+{
+  "rans": {
+    "d": 8,
+    "k": 8,
+    "seed": 0
+  },
+  "crd": {
+    "inner": 5,
+    "outer": 11,
+    "ridge": 0.000001
+  },
+  "njcr": {
+    "n_segments": 100,
+    "atoms_per_segment": 5,
+    "anomaly_atoms": 50,
+    "ridge": 100.0
+  },
+  "awcr": {
+    "n_components": 5,
+    "fine_segments": 150,
+    "coarse_segments": 100,
+    "background_factor": 0.2,
+    "anomaly_factor": 0.005,
+    "local_weight": 0.15
+  },
+  "sp_procrd": {
+    "bands": 10,
+    "alpha": 0.01,
+    "beta": 0.01,
+    "initial_age": 1.0,
+    "bandwidth1": 0.5,
+    "bandwidth2": 0.28
+  },
+  "krcrd": {
+    "k": 15,
+    "h": 0.5,
+    "ridge": 0.01,
+    "coupling": 0.01,
+    "min_cluster_size": 2
+  }
+}

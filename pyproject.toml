@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rans-had"
+version = "0.1.0"
+description = "Reliability-guided adaptive neighborhood selection for hyperspectral anomaly detection"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.23",
+    "scipy>=1.9",
+    "scikit-image>=0.20",
+]
+
+[project.urls]
+Repository = "https://github.com/zhuxuejin/RANS-HAD"
+
+[project.scripts]
+rans-had = "rans_had.benchmark:main"
+
+[tool.setuptools]
+packages = ["rans_had", "rans_had.baselines"]
+py-modules = ["benchmark", "rans", "metrics", "crd", "njcr", "awcr", "sp_procrd", "krcrd"]

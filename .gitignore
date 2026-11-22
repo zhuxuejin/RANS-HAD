@@ -1,0 +1,16 @@
+# Local environments and build products
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+/build/
+/dist/
+.pytest_cache/
+
+# Local scene data, generated maps, and evaluation outputs
+/data/
+/runs/
+*.mat
+*.npy
+*.npz

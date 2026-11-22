@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Please cite this software when using RANS-HAD."
+title: "RANS-HAD: Reliability-Guided Adaptive Neighborhood Selection for Hyperspectral Anomaly Detection"
+type: software
+authors:
+  - family-names: Zhu
+    given-names: Xuejin
+    orcid: "https://orcid.org/0000-0001-5057-1563"
+  - family-names: Zhu
+    given-names: LingLong
+    orcid: "https://orcid.org/0000-0002-8863-9911"
+  - family-names: Zhou
+    given-names: Yitong
+    orcid: "https://orcid.org/0009-0000-1881-0894"
+repository-code: "https://github.com/zhuxuejin/RANS-HAD"
+keywords:
+  - hyperspectral imaging
+  - anomaly detection
+  - collaborative representation
